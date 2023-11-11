@@ -39,6 +39,11 @@
     align-items: center;
 }
 
+.header-right-content:hover{
+    background-color: #f8f6f6;
+    border-radius: 4px;
+}
+
 .header-upgrade-button{
     background-color: #FFEFED;
     margin-right: 1.2em;
@@ -64,8 +69,4 @@
     color: #ff6a1a;
     font-weight: lighter;
     margin-right: 1.5em;
-}
-
-.blah{
-    height: 200vh;
 }

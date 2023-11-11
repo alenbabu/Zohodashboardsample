@@ -1,11 +1,11 @@
 .sidenavbar{
     background-color: #172635;
-    width: 6.5%;
+    width: 90px;
     height: 100vh;
-    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
     color: white;
 }
 
@@ -17,6 +17,8 @@
     text-align: center;
     width: 100%;
     padding-top: 1.5em;
+    text-decoration: none;
+    color: white;
 }
 
 .sidenavbar-content:hover{
@@ -24,3 +26,4 @@
     border-right-style: inset;
     border-right: 3.5px solid cyan;
 }
+
