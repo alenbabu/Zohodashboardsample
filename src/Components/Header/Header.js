@@ -10,10 +10,15 @@ function Header() {
             </div>
 
             <div className='header-right-content'>
-                <h2>Trial expires in 10days</h2>
-                <button>Upgrade</button>
-                <i class="fa-solid fa-square-plus icon"></i>
-                <i class="fa-duotone fa-magnifying-glass"></i>
+                <h3 className='header-trial-title'>Trial expires in 10 days</h3>
+                <button className='header-upgrade-button'>Upgrade</button>
+                <i class="fa-solid fa-square-plus plus-icon icon"></i>
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <i class="fa-regular fa-bell icon"></i>
+                <i class="fa-regular fa-circle-question icon"></i>
+                <i class="fa-solid fa-gear icon"></i>
+                <i class="fa-solid fa-ellipsis-vertical icon"></i>
+                <img className='header-avatar icon' src='./assets/avatar.png ' alt='logo' />
 
             </div>
 
