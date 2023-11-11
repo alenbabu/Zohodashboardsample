@@ -21,5 +21,6 @@
 
 .sidenavbar-content:hover{
     background-color: black;
-    border-left: 1px solid cyan;
+    border-right-style: inset;
+    border-right: 3.5px solid cyan;
 }
