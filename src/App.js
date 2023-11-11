@@ -1,12 +1,13 @@
 import Header from "./Components/Header/Header";
-import Sidenavbar from "./Components/SideNavbar/Sidenavbar";
+import SideNavbar from "./Components/SideNavbar/SideNavbar";
+
 import './app.css'
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Sidenavbar/>
+      <SideNavbar/>
     </div>
   );
 }
