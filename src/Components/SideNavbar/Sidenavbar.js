@@ -15,6 +15,9 @@ function SideNavbar() {
         setIsDropdownopen(!isDropdownopen);
 
     }
+    const contactMouseLeave=()=>{
+        setIsDropdownopen(false);
+    }
 
     return (
         <div className='sidenavbar'>
@@ -27,7 +30,7 @@ function SideNavbar() {
                 <h5 className='sidenavbar-titles'>Campaigns</h5>
 
             </Link>
-            <div onClick={contactToggleDropdown} className='sidenavbar-content'>
+            <div onClick={contactToggleDropdown} onMouseLeave={contactMouseLeave} className='sidenavbar-content'>
                 <AiOutlineContacts style={{ color: "white", fontSize: "1.5em" }} />
                 <h5 className='sidenavbar-titles'>Contacts</h5>
                 {isDropdownopen && (
