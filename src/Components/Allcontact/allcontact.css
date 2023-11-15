@@ -127,6 +127,7 @@
     color: #FF7E18;
 }
 
+
 .right-div-icon-div {
     width: 74%;
     height: 10vh;
@@ -151,3 +152,43 @@
     -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
 }
+
+.right-div-icons:hover{
+    outline: rgb(182, 180, 180) solid 1px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 95px;
+    background-color: black;
+    font-size: 0.7em;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

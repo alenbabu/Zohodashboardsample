@@ -54,17 +54,19 @@ function Allcontact() {
                 </div>
 
                 <div className='right-div-icon-div'>
-                    <div className='right-div-icons'>
-                        <IoIosSearch  style={{ color: "grey", fontSize: "1.5em" }} />
+                    <div className='right-div-icons tooltip'>
+                        <span class="tooltiptext">Search</span>
+                        <IoIosSearch style={{ color: "grey", fontSize: "1.5em" }} />
 
                     </div>
-                    <div className='right-div-icons'>
+                    <div className='right-div-icons tooltip'>
+                        <span class="tooltiptext">Advanced search</span>
                         <TbWorldSearch style={{ color: "grey", fontSize: "1.5em" }} />
 
                     </div>
-                    <div className='right-div-icons'>
+                    <div className='right-div-icons tooltip'>
+                        <span class="tooltiptext">Organize coloumns</span>
                         <HiOutlineAdjustmentsVertical style={{ color: "grey", fontSize: "1.5em" }} />
-
                     </div>
 
 
