@@ -66,9 +66,9 @@
     height: 35px;
     margin-right: 1em;
     color: white;
-    background-color: #FF7E18;
+    background-color: #FD7553;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .addnew-btn:hover{
@@ -81,9 +81,43 @@
     color: #FF7E18;
     background-color: white;
     border: 0.5px solid #FF7E18;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .more-btn:hover{
     box-shadow: 0 8px 8px -4px lightblue;
+}
+
+.left-div-filterby-text{
+    color: grey;
+    font-weight: lighter
+}
+
+.left-div-filterby{
+    padding-left: 1em;
+    padding-top: 2em;
+    width: 22%;
+    height: 60vh;
+    border-right: 1px solid rgb(242, 245, 245);
+    border-bottom: 1px solid rgb(242, 245, 245);
+
+}
+
+.left-div-content{
+    display: flex;
+    padding-top: 1.5em;
+}
+
+.left-div-chkbox[type='checkbox']{
+    accent-color: #FF7E18;
+
+}
+
+.left-div-text{
+    margin-left: 0.5em;
+    color: gray;
+}
+
+.left-div-text:hover{
+    color: #FF7E18;
 }

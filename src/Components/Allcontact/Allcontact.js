@@ -28,6 +28,27 @@ function Allcontact() {
 
             </div>
 
+            <div className='left-div-filterby'>
+                <h4 className='left-div-filterby-text'>FILTER BY</h4>
+                <div className='left-div-content'>
+                    <input className='left-div-chkbox' type='checkbox' />
+                    <h4 className='left-div-text'>Contact Owner</h4>
+                </div>
+                <div className='left-div-content'>
+                    <input className='left-div-chkbox' type='checkbox' />
+                    <h4 className='left-div-text'>Tags</h4>
+                </div>
+                <div className='left-div-content'>
+                    <input className='left-div-chkbox' type='checkbox' />
+                    <h4 className='left-div-text'>Score</h4>
+                </div>
+                <div className='left-div-content'>
+                    <input className='left-div-chkbox' type='checkbox' />
+                    <h4 className='left-div-text'>Activity</h4>
+                </div>
+
+            </div>
+
         </div>
     )
 }

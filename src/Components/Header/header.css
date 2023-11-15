@@ -65,6 +65,10 @@
     cursor: pointer;
 }
 
+.header-avatar{
+    border-radius: 20px;
+}
+
 .header-trial-title{
     color: #ff6a1a;
     font-weight: lighter;
