@@ -1,5 +1,9 @@
 import React from 'react'
 import './allcontact.css'
+import { IoIosSearch } from "react-icons/io";
+import { TbWorldSearch } from "react-icons/tb";
+import { HiOutlineAdjustmentsVertical } from "react-icons/hi2";
+
 
 function Allcontact() {
     return (
@@ -27,27 +31,48 @@ function Allcontact() {
                 </div>
 
             </div>
+            <div className='allcontacts-wrapper'>
+                <div className='left-div-filterby'>
+                    <h4 className='left-div-filterby-text'>FILTER BY</h4>
+                    <div className='left-div-content'>
+                        <input className='left-div-chkbox' type='checkbox' />
+                        <h4 className='left-div-text'>Contact Owner</h4>
+                    </div>
+                    <div className='left-div-content'>
+                        <input className='left-div-chkbox' type='checkbox' />
+                        <h4 className='left-div-text'>Tags</h4>
+                    </div>
+                    <div className='left-div-content'>
+                        <input className='left-div-chkbox' type='checkbox' />
+                        <h4 className='left-div-text'>Score</h4>
+                    </div>
+                    <div className='left-div-content'>
+                        <input className='left-div-chkbox' type='checkbox' />
+                        <h4 className='left-div-text'>Activity</h4>
+                    </div>
 
-            <div className='left-div-filterby'>
-                <h4 className='left-div-filterby-text'>FILTER BY</h4>
-                <div className='left-div-content'>
-                    <input className='left-div-chkbox' type='checkbox' />
-                    <h4 className='left-div-text'>Contact Owner</h4>
                 </div>
-                <div className='left-div-content'>
-                    <input className='left-div-chkbox' type='checkbox' />
-                    <h4 className='left-div-text'>Tags</h4>
-                </div>
-                <div className='left-div-content'>
-                    <input className='left-div-chkbox' type='checkbox' />
-                    <h4 className='left-div-text'>Score</h4>
-                </div>
-                <div className='left-div-content'>
-                    <input className='left-div-chkbox' type='checkbox' />
-                    <h4 className='left-div-text'>Activity</h4>
+
+                <div className='right-div-icon-div'>
+                    <div className='right-div-icons'>
+                        <IoIosSearch  style={{ color: "grey", fontSize: "1.5em" }} />
+
+                    </div>
+                    <div className='right-div-icons'>
+                        <TbWorldSearch style={{ color: "grey", fontSize: "1.5em" }} />
+
+                    </div>
+                    <div className='right-div-icons'>
+                        <HiOutlineAdjustmentsVertical style={{ color: "grey", fontSize: "1.5em" }} />
+
+                    </div>
+
+
                 </div>
 
             </div>
+
+
 
         </div>
     )

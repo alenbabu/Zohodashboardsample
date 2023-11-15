@@ -1,11 +1,11 @@
-.allcontact{
+.allcontact {
     flex: 1;
     margin-left: 90px;
     height: 100vh;
 
 }
 
-.contacts-allcontacts-title-div{
+.contacts-allcontacts-title-div {
     position: sticky;
     top: 0;
     width: 100%;
@@ -21,23 +21,23 @@
     justify-content: space-between;
 }
 
-.contact-allcontacts-title{
+.contact-allcontacts-title {
     display: flex;
     flex-direction: row;
     padding-left: 1em;
 }
 
-.contact-allcontacts-fav-title{
+.contact-allcontacts-fav-title {
     display: flex;
     flex-direction: row;
     padding-right: 1em;
 }
 
-.contacts-title-text{
+.contacts-title-text {
     font-weight: lighter;
 }
 
-.contact-allcontacts-header-div{
+.contact-allcontacts-header-div {
     height: 8vh;
     border-top: none;
     border-bottom: 2.5px solid rgb(242, 245, 245);
@@ -48,20 +48,20 @@
     justify-content: space-between;
 }
 
-.contact-allcontacts-header{
+.contact-allcontacts-header {
     padding-left: 1em;
 }
 
-.contact-allcontacts-buttons{
+.contact-allcontacts-buttons {
     padding-right: 1em;
 }
 
-.contact-allcontacts-header-text{
+.contact-allcontacts-header-text {
     font-weight: lighter;
     color: #FF7E18;
 }
 
-.addnew-btn{
+.addnew-btn {
     width: 105px;
     height: 35px;
     margin-right: 1em;
@@ -71,11 +71,11 @@
     border-radius: 4px;
 }
 
-.addnew-btn:hover{
+.addnew-btn:hover {
     box-shadow: 0 8px 8px -4px lightblue;
 }
 
-.more-btn{
+.more-btn {
     width: 80px;
     height: 35px;
     color: #FF7E18;
@@ -84,16 +84,21 @@
     border-radius: 4px;
 }
 
-.more-btn:hover{
+.more-btn:hover {
     box-shadow: 0 8px 8px -4px lightblue;
 }
 
-.left-div-filterby-text{
+.allcontacts-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-div-filterby-text {
     color: grey;
     font-weight: lighter
 }
 
-.left-div-filterby{
+.left-div-filterby {
     padding-left: 1em;
     padding-top: 2em;
     width: 22%;
@@ -103,21 +108,46 @@
 
 }
 
-.left-div-content{
+.left-div-content {
     display: flex;
     padding-top: 1.5em;
 }
 
-.left-div-chkbox[type='checkbox']{
+.left-div-chkbox[type='checkbox'] {
     accent-color: #FF7E18;
 
 }
 
-.left-div-text{
+.left-div-text {
     margin-left: 0.5em;
     color: gray;
 }
 
-.left-div-text:hover{
+.left-div-text:hover {
     color: #FF7E18;
+}
+
+.right-div-icon-div {
+    width: 74%;
+    height: 10vh;
+    margin-left: 1em;
+    margin-top: 0.7em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-div-icons {
+    border: 1px solid;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    border-radius: 4px;
+    margin-right: 1em;
+    margin-top: -0.5em;
+    border: 1px solid rgb(223, 228, 228);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
 }
