@@ -1,9 +1,9 @@
 import Header from "./Components/Header/Header";
-import SideNavbar from "./Components/SideNavbar/SideNavbar";
 import './app.css'
 import {BrowserRouter,Routes, Route} from "react-router-dom"
 import Dashboard from "./Components/Dashboard/Dashboard";
 import Campaigns from "./Components/Campaigns/Campaigns";
+import Mainlayout from "./Components/Mainlayout/Mainlayout";
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Header/>
-      <SideNavbar/>
+      <Mainlayout/>
       <Routes>
         <Route path="/dashboard" element={<Dashboard/>}></Route>
         <Route path="/campaigns" element={<Campaigns/>}></Route>
