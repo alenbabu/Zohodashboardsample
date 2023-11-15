@@ -13,7 +13,18 @@ function Allcontact() {
                     <h5 className='contacts-title-text'>Favourite this?&nbsp;&nbsp;&nbsp;</h5>
                     <i class="fa-regular fa-heart contacts-title-text"></i>
                 </div>
+            </div>
 
+            <div className='contact-allcontacts-header-div'>
+                <div className='contact-allcontacts-header'>
+                    <h2 className='contact-allcontacts-header-text'>Marketing Contacts</h2>
+
+                </div>
+                <div className='contact-allcontacts-buttons'>
+                    <button className='addnew-btn'>Add New</button>
+                    <button className='more-btn'>More</button>
+
+                </div>
 
             </div>
 
