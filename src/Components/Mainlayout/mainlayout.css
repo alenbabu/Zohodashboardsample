@@ -1,5 +1,5 @@
 .mainlayout{
     display: flex;
-    height: 90vh; /* Adjust height as needed */
+    height: 92vh; /* Adjust height as needed */
     overflow-x: hidden;
 }

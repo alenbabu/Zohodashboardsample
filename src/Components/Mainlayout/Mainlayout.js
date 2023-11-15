@@ -8,7 +8,6 @@ function Mainlayout() {
     <div className='mainlayout'>
         <SideNavbar/>
         <Allcontact/>
-
     </div>
   )
 }
