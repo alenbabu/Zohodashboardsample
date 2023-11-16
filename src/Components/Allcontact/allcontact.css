@@ -291,3 +291,22 @@ tr> :first-child {
     visibility: visible;
     background-color: #FD7553;
   }
+
+  .chatbot{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #FD7553;
+    align-self: flex-end;
+    margin: 2em 2em;
+  }
+
+  .chatdiv{
+    position: absolute;
+    align-self: flex-end;
+    margin-right: 5em;
+    bottom: 3em;
+  }

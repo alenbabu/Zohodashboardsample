@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './allcontact.css'
 import { IoIosSearch } from "react-icons/io";
 import { TbWorldSearch } from "react-icons/tb";
 import { HiOutlineAdjustmentsVertical } from "react-icons/hi2";
+import ChatBot from 'react-simple-chatbot';
+import { RiMessage2Fill } from "react-icons/ri";
 
 
 function Allcontact() {
+
+    const [component, setComponent] = useState(false)
+
+    const toggleComponent = () => {
+        setComponent(!component);
+    };
+
     return (
         <div className='allcontact'>
             <div className='contacts-allcontacts-title-div'>
@@ -123,17 +132,41 @@ function Allcontact() {
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
                         </div>
+
+                    </div>
+                    <div onClick={toggleComponent} className='chatbot'>
+                    <RiMessage2Fill style={{ color: "white", fontSize: "1.5em" }} />
                     </div>
 
-
+                    {component && (
+                        <div className='chatdiv'>
+                            <ChatBot 
+                            steps={[
+                                {
+                                  id: '1',
+                                  message: 'What is your name?',
+                                  trigger: '2',
+                                },
+                                {
+                                  id: '2',
+                                  user: true,
+                                  trigger: '3',
+                                },
+                                {
+                                  id: '3',
+                                  message: 'Hi {previousValue}, nice to meet you!',
+                                  end: true,
+                                },
+                              ]}/>
+                        </div>
+                    )}
                 </div>
 
             </div>
 
         </div>
-
-        </div >
     )
 }
 
