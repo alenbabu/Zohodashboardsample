@@ -7,14 +7,12 @@
 
 .contacts-allcontacts-title-div {
     position: sticky;
-    top: 0;
+    top: 7.5vh;
     width: 100%;
     height: 4vh;
     border-top: none;
     border-bottom: 0.5px solid rgb(242, 245, 245);
     background-color: white;
-    position: sticky;
-    z-index: 2;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,7 +99,7 @@
 .left-div-filterby {
     padding-left: 1em;
     padding-top: 2em;
-    width: 22%;
+    width: 28%;
     height: 60vh;
     border-right: 1px solid rgb(242, 245, 245);
     border-bottom: 1px solid rgb(242, 245, 245);
@@ -127,10 +125,10 @@
     color: #FF7E18;
 }
 
-.right-wrapper{
+.right-wrapper {
     display: flex;
-    flex-direction: column; 
-    width: 90%;
+    flex-direction: column;
+    width: 75%;
 }
 
 
@@ -159,16 +157,16 @@
     -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
-.right-div-icons:hover{
+.right-div-icons:hover {
     outline: rgb(182, 180, 180) solid 1px;
 }
 
 .tooltip {
     position: relative;
     display: inline-block;
-  }
-  
-  .tooltip .tooltiptext {
+}
+
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 95px;
     background-color: black;
@@ -182,9 +180,9 @@
     bottom: 150%;
     left: 50%;
     margin-left: -60px;
-  }
-  
-  .tooltip .tooltiptext::after {
+}
+
+.tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -193,19 +191,103 @@
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+}
 
-  .right-div-contacts-table{
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.right-div-contacts-table {
     border: 1px solid;
-    width: 95%;
+    width: 90%;
     height: 50vh;
-    margin-left: 1.5em;
+    margin-left: 4em;
     margin-top: 1em;
     border-radius: 4px;
     border: 1px solid rgb(242, 245, 245);
-  }
+}
 
+
+/* table */
+
+td,
+th {
+    border: 1px solid rgb(242, 245, 245);
+    padding: 10px;
+    min-width: 200px;
+    background: white;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.unfixed-table{
+    height: 43vh;
+}
+
+.table-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+
+
+thead th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-weight: lighter;
+}
+
+thead th:first-child {
+    left: 0;
+    z-index: 2;
+}
+
+td {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    font-weight: lighter;
+}
+
+td:first-child {
+    z-index: 3;
+    color: #349BF1;
+}
+
+tbody {
+    overflow: scroll;
+    height: 200px;
+}
+
+/* MAKE LEFT COLUMN FIXEZ */
+tr> :first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    visibility: hidden;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    visibility: visible;
+    background-color: #FD7553;
+  }

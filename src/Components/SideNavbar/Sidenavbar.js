@@ -4,7 +4,7 @@ import { AiOutlineDashboard, AiOutlineContacts } from "react-icons/ai"
 import { MdOutlineCampaign, MdLocalLibrary, MdOutlineReport } from "react-icons/md"
 import { TbSettingsAutomation } from "react-icons/tb"
 import { BsCartCheck } from "react-icons/bs"
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import '../contactdropdown/contactdropdown.css'
 
@@ -36,7 +36,7 @@ function SideNavbar() {
                 {isDropdownopen && (
                     <div className="contacts-dropdown-menu">
                         <ul>
-                            <li>All Contacts</li>
+                            <NavLink to="/contacts/allcontacts" className="active"><li>All Contacts</li></NavLink>
                             <li>Manage Lists</li>
                             <li>Manage Topics</li>
                             <li>Sync Service</li>

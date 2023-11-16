@@ -72,15 +72,68 @@ function Allcontact() {
 
                     </div>
                     <div className='right-div-contacts-table'>
-                        
 
+                        {/* table */}
+                        <div class="table-container">
+                            <div class="table-horizontal-container">
+                                <table class="unfixed-table">
+                                    <thead>
+                                        <tr>
+                                            <td>Contact Email</td>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Company Name</th>
+                                            <th>Phone</th>
+                                            <th>Mobile</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>alenbabualen@gmail.com</td>
+                                            <td>Column two</td>
+                                            <td>Column three</td>
+                                            <td>Column four</td>
+                                            <td>Five</td>
+                                            <td>six</td>
+                                        </tr>
+                                        <tr>
+                                            <td>narmi@zohocampaigns.com</td>
+                                            <td>Column two</td>
+                                            <td>Column three</td>
+                                            <td>Column four</td>
+                                            <td>Five</td>
+                                            <td>six</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>bale@zohomarketingautoma</td>
+                                            <td>Column two</td>
+                                            <td>Column three</td>
+                                            <td>Column four</td>
+                                            <td>Five</td>
+                                            <td>six</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aron@zohocampaigns.com</td>
+                                            <td>Column two</td>
+                                            <td>Column three</td>
+                                            <td>Column four</td>
+                                            <td>Five</td>
+                                            <td>six</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </div>
                     </div>
+
 
                 </div>
 
             </div>
 
         </div>
+
+        </div >
     )
 }
 

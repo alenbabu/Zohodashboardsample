@@ -13,6 +13,11 @@
     font-weight: lighter;
 }
 
+.active{
+    text-decoration: none;
+    color: white;
+}
+
 .sidenavbar-content{
     text-align: center;
     width: 100%;
