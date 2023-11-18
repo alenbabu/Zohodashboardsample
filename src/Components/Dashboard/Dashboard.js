@@ -1,10 +1,9 @@
 import React from 'react'
-import "./dashboard.css"
 
 function Dashboard() {
   return (
-    <div className='dashboard'>
-      <h1>DASHBOARD</h1>
+    <div className='text-[rgb(107,126,120)] relative left-[90px]'>
+      <h1 className='text-4xl'>DASHBOARD</h1>
     </div>
   )
 }
