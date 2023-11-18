@@ -1,10 +1,9 @@
 import React from 'react'
-import './campaigns.css'
 
 function Campaigns() {
   return (
-    <div className='campaigns'>
-      <h1>CAMPAIGNS</h1>
+    <div className='text-[rgb(107,126,120)] relative left-[90px]'>
+      <h1 className='text-4xl'>CAMPAIGNS</h1>
     </div>
   )
 }
