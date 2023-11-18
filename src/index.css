@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  .tooltip {
+    @apply relative inline-block;
+  }
+  .tooltip .tooltiptext {
+    @apply invisible w-[95px] bg-[black] text-[0.7em] text-white text-center rounded absolute z-[1] ml-[-60px] px-0 py-[5px] left-2/4 bottom-[150%] after:content-[""] after:absolute after:ml-[-5px] after:border-[5px] after:border-solid after:border-[black_transparent_transparent_transparent] after:left-2/4 after:top-full;
+  }
+  .tooltip:hover .tooltiptext {
+    @apply visible;
+  }
+  
+  /* table */
+  td,
+  th {
+    @apply border min-w-[200px] box-border text-left p-2.5 border-solid border-[rgb(242,245,245)];
+    background: white;
+  }
+  .unfixed-table {
+    @apply h-[43vh];
+  }
+  .table-container {
+    @apply relative h-[300px] w-full overflow-x-scroll;
+  }
+  thead th {
+    @apply sticky z-[2] font-[lighter] top-0 first:z-[2] first:left-0;
+    position: -webkit-sticky;
+  }
+  td {
+    @apply sticky z-[2] font-[lighter] bottom-0 first:z-[3] first:text-[#349BF1];
+  }
+  tbody {
+    @apply overflow-scroll h-[200px];
+  }
+  
+  /* MAKE LEFT COLUMN FIXEZ */
+  tr > :first-child {
+    @apply sticky left-0;
+    position: -webkit-sticky;
+  }
+  ::-webkit-scrollbar {
+    @apply w-[5px];
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply invisible hover:visible hover:bg-[#FD7553];
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
