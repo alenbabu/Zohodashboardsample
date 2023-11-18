@@ -8,9 +8,9 @@ import avatar from "../../assets/avatar.png"
 function Header() {
     return (
         <div className='sticky w-full h-[7.5vh] z-[2] flex justify-between items-center bg-[white] border-b-[rgb(238,223,223)] border-b border-solid top-0'>
-            <div className='flex'>
+            <div className='flex justify-center items-center'>
                 <img className='w-[2em] h-[2em] cursor-pointer ml-[0.5em]' src={logo} alt='logo' />
-                <h1 className='text-[1.5rem] cursor-pointer ml-[0.2em] mt-[0.3em]'>Campaigns</h1>
+                <h1 className='text-[1.5rem] cursor-pointer ml-[0.2em]'>Campaigns</h1>
             </div>
 
             <div className='h-[7.5vh] flex justify-end items-center hover:bg-[#f8f6f6] hover:rounded'>
