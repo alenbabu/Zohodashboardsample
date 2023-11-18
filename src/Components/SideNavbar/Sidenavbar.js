@@ -5,7 +5,6 @@ import { TbSettingsAutomation } from "react-icons/tb"
 import { BsCartCheck } from "react-icons/bs"
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
-import '../contactdropdown/contactdropdown.css'
 
 
 function SideNavbar() {
@@ -33,14 +32,14 @@ function SideNavbar() {
                 <AiOutlineContacts style={{ color: "white", fontSize: "1.5em" }} />
                 <h5 className='font-[lighter] text-xs'>Contacts</h5>
                 {isDropdownopen && (
-                    <div className="contacts-dropdown-menu">
-                        <ul>
-                            <NavLink to="/contacts/allcontacts" className="no-underline text-[white]"><li>All Contacts</li></NavLink>
-                            <li>Manage Lists</li>
-                            <li>Manage Topics</li>
-                            <li>Sync Service</li>
-                            <li>Segments</li>
-                            <li>Contact Tags</li>
+                    <div className="absolute mt-[-1.3em] w-[180px] bg-[#172635] text-[white] border rounded border-solid border-[#888] left-full">
+                        <ul className='m-0 p-0 list-none'>
+                            <NavLink to="/contacts/allcontacts" className=" hover:bg-[black] text-center no-underline text-[white]"><li>All Contacts</li></NavLink>
+                            <li className='text-center cursor-pointer p-2.5 hover:bg-[black]'>Manage Lists</li>
+                            <li className='text-center cursor-pointer p-2.5 hover:bg-[black]'>Manage Topics</li>
+                            <li className='text-center cursor-pointer p-2.5 hover:bg-[black]'>Sync Service</li>
+                            <li className='text-center cursor-pointer p-2.5 hover:bg-[black]'>Segments</li>
+                            <li className='text-center cursor-pointer p-2.5 hover:bg-[black]'>Contact Tags</li>
                         </ul>
                     </div>
                 )}
