@@ -25,7 +25,7 @@ function SideNavbar() {
             </Link>
             <Link to="/campaigns" className='flex flex-col items-center w-full no-underline text-[white] pt-[1.5em] hover:bg-[black] hover:border-b-2 hover:border-b-[cyan] hover:border-solid'>
                 <MdOutlineCampaign style={{ color: "white", fontSize: "1.5em" }} />
-                <h5 className='font-[lighter] text-xs'>Campaigns</h5>
+                <h5 className='font-[lighter] text-xs'>Campaign</h5>
 
             </Link>
             <div onClick={contactToggleDropdown} onMouseLeave={contactMouseLeave} className='flex flex-col items-center w-full no-underline text-[white] pt-[1.5em] hover:bg-[black] hover:border-b-2 hover:border-b-[cyan] hover:border-solid'>

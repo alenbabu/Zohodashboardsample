@@ -23,7 +23,7 @@ function Allcontact() {
                 </div>
                 <div className='flex flex-row pr-[1em]'>
                     <h5 className='font-[lighter]'>Favourite this?&nbsp;&nbsp;&nbsp;</h5>
-                    <i class="fa-regular fa-heart font-[lighter]"></i>
+                    <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@ function Allcontact() {
                     <div className='w-[90%] h-[10vh] flex flex-row items-center justify-end ml-[4em] mt-[0.7em]'>
                         <div className='border text-center w-10 h-[30px] rounded mt-[-0.5em] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.15)] mr-[1em] border-solid border-[rgb(223,228,228)] tooltip'>
                             <span class="tooltiptext">Search</span>
-                            <IoIosSearch style={{ color: "grey", fontSize: "1.5em" }} />
+                            <IoIosSearch style={{ color: "grey", fontSize: "1.5em"}} />
 
                         </div>
                         <div className='border text-center w-10 h-[30px] rounded mt-[-0.5em] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.15)] mr-[1em] border-solid border-[rgb(223,228,228)] tooltip'>
